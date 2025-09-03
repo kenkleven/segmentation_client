@@ -31,15 +31,17 @@ pip install -r requirements.txt
 ```
 
 ### 3. Utilisation
-```bash
 - Lancer l’API
+```bash
 uvicorn api:app --reload
 API disponible sur http://127.0.0.1:8000/docs
-
+```
 - Lancer l’application Streamlit
+```bash
 streamlit run app.py
-
+```
 - Déploiement avec Docker
+```bash
 docker build -t segmentation-client .
 docker run -p 8501:8501 segmentation-client
 ```
